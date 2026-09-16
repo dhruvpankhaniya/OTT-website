@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorites - MovieVerse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="site-header">
+        <div class="logo">MovieVerse</div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="favorites.html" class="active">Favorites</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="section">
+            <h2 class="section-title">My Favorites</h2>
+            <p class="section-subtitle">Movies you have saved to watch later. (Static example - saving/removing will work from Week 6 onwards.)</p>
+
+            <div class="movie-grid" id="favoritesGrid">
+
+                <article class="movie-card">
+                    <img class="movie-poster" src="images/movies/inception.jpg" alt="Inception poster">
+                    <div class="movie-info">
+                        <h3>Inception</h3>
+                        <div class="movie-meta"><span>Sci-Fi</span><span>2010</span><span>⭐ 8.8</span></div>
+                        <div class="movie-actions">
+                            <a href="movie-details.html" class="btn">View Details</a>
+                            <button class="btn btn-outline removeButton">Remove</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <img class="movie-poster" src="https://wallpapercave.com/wp/wp10944811.jpg" alt="RRR poster">
+                    <div class="movie-info">
+                        <h3>RRR</h3>
+                        <div class="movie-meta"><span>Action</span><span>2022</span><span>⭐ 7.9</span></div>
+                        <div class="movie-actions">
+                            <a href="movie-details.html" class="btn">View Details</a>
+                            <button class="btn btn-outline removeButton">Remove</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <img class="movie-poster" src="https://wallpapercave.com/wp/wp6568157.jpg" alt="3 Idiots poster">
+                    <div class="movie-info">
+                        <h3>3 Idiots</h3>
+                        <div class="movie-meta"><span>Comedy</span><span>2009</span><span>⭐ 8.4</span></div>
+                        <div class="movie-actions">
+                            <a href="movie-details.html" class="btn">View Details</a>
+                            <button class="btn btn-outline removeButton">Remove</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Shown when the favorites list is empty (hidden for now) -->
+            <p class="empty-msg" id="emptyFavoritesMsg" style="display:none;">You have not added any movies to your favorites yet.</p>
+
+        </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h4>MovieVerse</h4>
+                <p>Your one-stop portal to discover, search and explore movies from around the world.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="movies.html">Movies</a>
+                <a href="favorites.html">Favorites</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>Email: support@movieverse.com</p>
+                <p>Phone: +91 94847 83397</p>
+                <p>Address: Rajkot, Gujarat, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MovieVerse | Darshan Institute of Engineering and Technology</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

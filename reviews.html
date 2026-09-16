@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews & Ratings - MovieVerse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="site-header">
+        <div class="logo">MovieVerse</div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="reviews.html" class="active">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="section">
+            <h2 class="section-title">Write a Review</h2>
+
+            <!-- HTML5 validation only (required, type, minlength, maxlength, min, max).
+                 No JavaScript validation yet - that comes in Week 4/6. -->
+            <form class="form-box" id="reviewForm">
+
+                <div class="form-group">
+                    <label for="userName">Your Name</label>
+                    <input type="text" id="userName" name="userName" required minlength="2" maxlength="40" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="userEmail">Email</label>
+                    <input type="email" id="userEmail" name="userEmail" required placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="movieName">Movie</label>
+                    <select id="movieName" name="movieName" required>
+                        <option value="">-- Select a Movie --</option>
+                        <option value="inception">Inception</option>
+                        <option value="interstellar">Interstellar</option>
+                        <option value="the-dark-knight">The Dark Knight</option>
+                        <option value="rrr">RRR</option>
+                        <option value="3-idiots">3 Idiots</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="ratingInput">Rating (1 - 10)</label>
+                    <input type="number" id="ratingInput" name="ratingInput" required min="1" max="10" placeholder="e.g. 8">
+                </div>
+
+                <div class="form-group">
+                    <label for="reviewText">Your Review</label>
+                    <textarea id="reviewText" name="reviewText" rows="4" required minlength="10" maxlength="500" placeholder="Share your thoughts about the movie..."></textarea>
+                </div>
+
+                <button type="submit" class="btn">Submit Review</button>
+            </form>
+        </section>
+
+        <!-- ===================== EXISTING REVIEWS ===================== -->
+        <section class="section">
+            <h2 class="section-title">What Viewers Are Saying</h2>
+
+            <div id="reviewList">
+
+                <article class="review-card">
+                    <div class="review-top">
+                        <span><strong>Rohan Mehta</strong> on Inception</span>
+                        <span>12 Aug 2026</span>
+                    </div>
+                    <p>⭐ 9/10 - Mind-bending concept with stunning visuals. A must watch for every movie lover.</p>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-top">
+                        <span><strong>Priya Shah</strong> on RRR</span>
+                        <span>05 Aug 2026</span>
+                    </div>
+                    <p>⭐ 8/10 - Amazing action sequences and background score. Thoroughly entertaining.</p>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-top">
+                        <span><strong>Aman Verma</strong> on 3 Idiots</span>
+                        <span>28 Jul 2026</span>
+                    </div>
+                    <p>⭐ 9/10 - A perfect mix of comedy and life lessons. One of my all-time favorites.</p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h4>MovieVerse</h4>
+                <p>Your one-stop portal to discover, search and explore movies from around the world.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="movies.html">Movies</a>
+                <a href="favorites.html">Favorites</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>Email: support@movieverse.com</p>
+                <p>Phone: +91 94847 83397</p>
+                <p>Address: Rajkot, Gujarat, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MovieVerse | Darshan Institute of Engineering and Technology</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
